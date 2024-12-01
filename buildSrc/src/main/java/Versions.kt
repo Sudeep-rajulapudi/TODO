@@ -1,0 +1,18 @@
+object Versions {
+    const val coreKtx = "1.15.0"
+    const val lifecycleRuntimeKtx = "2.8.7"
+    const val activityCompose = "1.9.3"
+    const val composeBom = "2023.08.00"
+    const val junit = "4.13.2"
+    const val junitExt = "1.2.1"
+    const val espressoCore = "3.6.1"
+    const val coroutinesCore = "1.5.2"
+    const val coroutinesAndroid = "1.5.2"
+    const val daggerHiltAndroid = "2.48"
+    const val hiltAndroidCompiler = "2.48"
+    const val hiltCompiler = "1.1.0"
+    const val hiltViewModel = "1.0.0-alpha03"
+    const val roomRuntime = "2.6.1"
+    const val roomCompiler = "2.6.1"
+    const val roomKtx = "2.6.1"
+}
