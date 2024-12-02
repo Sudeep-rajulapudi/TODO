@@ -61,6 +61,8 @@ dependencies {
     implementation(Dependencies.composeUiGraphics)
     implementation(Dependencies.composeUiToolingPreview)
     implementation(Dependencies.composeMaterial3)
+    implementation(Dependencies.composeViewModel)
+    implementation(Dependencies.composeNavigation)
 
     // Coroutines
     implementation (Dependencies.coroutinesCore)
@@ -68,10 +70,8 @@ dependencies {
 
     //Dagger - Hilt
     implementation(Dependencies.daggerHiltAndroid)
-    kapt(Dependencies.hiltAndroidCompiler)
-
-    implementation (Dependencies.hiltViewModel)
-    kapt (Dependencies.hiltCompiler)
+    implementation(Dependencies.hiltNavigationCompose)
+    kapt(Dependencies.daggerHiltCompiler)
 
     // Room
     implementation (Dependencies.roomRuntime)
@@ -82,9 +82,14 @@ dependencies {
     testImplementation(Dependencies.junit)
     androidTestImplementation(Dependencies.junitExt)
     androidTestImplementation(Dependencies.espressoCore)
+    androidTestImplementation(Dependencies.roomTesting)
     androidTestImplementation(platform(Dependencies.composeBom))
     androidTestImplementation(Dependencies.composeUiTestJunit4)
+    androidTestImplementation(Dependencies.truthTesting)
     debugImplementation(Dependencies.composeUiTooling)
     debugImplementation(Dependencies.composeUiTestManifest)
 
+}
+kapt {
+    correctErrorTypes = true
 }

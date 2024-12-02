@@ -3,6 +3,8 @@ object Dependencies {
     val lifecycleRuntimeKtx by lazy{"androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycleRuntimeKtx}"}
     val activityCompose by lazy{"androidx.activity:activity-compose:${Versions.activityCompose}"}
     val composeBom by lazy{"androidx.compose:compose-bom:${Versions.composeBom}"}
+    val composeViewModel by lazy{"androidx.lifecycle:lifecycle-viewmodel-compose:${Versions.composeViewModel}"}
+    val composeNavigation by lazy{"androidx.navigation:navigation-compose:${Versions.composeNavigation}"}
     val composeUi by lazy{"androidx.compose.ui:ui"}
     val composeUiGraphics by lazy{"androidx.compose.ui:ui-graphics"}
     val composeUiToolingPreview by lazy{"androidx.compose.ui:ui-tooling-preview"}
@@ -16,12 +18,13 @@ object Dependencies {
     val coroutinesCore by lazy{"org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutinesCore}"}
     val coroutinesAndroid by lazy{"org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutinesAndroid}"}
     val daggerHiltAndroid by lazy{"com.google.dagger:hilt-android:${Versions.daggerHiltAndroid}"}
-    val hiltAndroidCompiler by lazy{"com.google.dagger:hilt-android-compiler:${Versions.hiltAndroidCompiler}"}
-    val hiltViewModel by lazy{"androidx.hilt:hilt-lifecycle-viewmodel:${Versions.hiltViewModel}"}
-    val hiltCompiler by lazy{"androidx.hilt:hilt-compiler:${Versions.hiltCompiler}"}
+    val daggerHiltCompiler by lazy{"com.google.dagger:hilt-compiler:${Versions.daggerHiltCompiler}"}
+    val hiltNavigationCompose by lazy{"androidx.hilt:hilt-navigation-compose:${Versions.hiltNavigationCompose}"}
     val roomRuntime by lazy{"androidx.room:room-runtime:${Versions.roomRuntime}"}
     val roomCompiler by lazy{"androidx.room:room-compiler:${Versions.roomCompiler}"}
     val roomKtx by lazy{"androidx.room:room-ktx:${Versions.roomKtx}"}
+    val roomTesting by lazy{"androidx.room:room-testing:${Versions.roomTesting}"}
+    val truthTesting by lazy{"com.google.truth:truth:${Versions.truthTesting}"}
 
 
 

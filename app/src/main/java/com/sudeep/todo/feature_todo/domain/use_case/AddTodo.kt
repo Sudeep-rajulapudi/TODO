@@ -16,7 +16,6 @@ class AddTodo(
             throw ErrorTodoException("Failed to add Todo")
         }
         repository.insertTodo(todo)
-
     }
 
 }
